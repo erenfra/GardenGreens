@@ -10,8 +10,12 @@ import SwiftUI
 struct NoteListView: View {
   @Environment(\.modelContext) private var modelContext
   @State private var text: String = ""
-
+  @Query private var notes: [Note]
   let vegetable: Vegetable
+
+  private var notesByVegetable: [Note] {
+    notes.filter {$0.vegetable!.id == vegetable.id}
+  }
 
     var body: some View {
       ZStack {
@@ -22,11 +26,11 @@ struct NoteListView: View {
             .onSubmit {
               guard text.isEmpty == false else { return }
               let note = Note(text: text)
-              vegetable.notes?.append(note)
+              note.vegetable = vegetable
               text = ""
             }
           List {
-            ForEach(vegetable.notes ?? []) { note in
+            ForEach(notesByVegetable) { note in
               Text(note.text)
             }
           }.scrollContentBackground(.hidden)

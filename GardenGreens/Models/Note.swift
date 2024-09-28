@@ -9,7 +9,7 @@ import Foundation
 
 @Model
 class Note {
-  var text: String
+  var text: String = "unknown"
   var vegetable: Vegetable?
 
   init(text: String) {

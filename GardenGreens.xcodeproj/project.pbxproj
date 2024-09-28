@@ -10,9 +10,22 @@
 		24B415AE2CA78D5300763D4F /* GardenGreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenGreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		24B415F02CA7A4CF00763D4F /* Exceptions for "GardenGreens" folder in "GardenGreens" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 24B415AD2CA78D5300763D4F /* GardenGreens */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		24B415B02CA78D5300763D4F /* GardenGreens */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				24B415F02CA7A4CF00763D4F /* Exceptions for "GardenGreens" folder in "GardenGreens" target */,
+			);
 			path = GardenGreens;
 			sourceTree = "<group>";
 		};
@@ -249,12 +262,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GardenGreens/GardenGreens.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GardenGreens/Preview Content\"";
 				DEVELOPMENT_TEAM = L5MEY32333;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GardenGreens/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Garden Greens";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -279,12 +294,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GardenGreens/GardenGreens.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GardenGreens/Preview Content\"";
 				DEVELOPMENT_TEAM = L5MEY32333;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GardenGreens/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Garden Greens";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

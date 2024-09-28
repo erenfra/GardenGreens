@@ -9,7 +9,7 @@ import Foundation
 
 @Model
 class Vegetable {
-  var name: String
+  var name: String = "tomato"
   @Relationship(deleteRule: .cascade) var notes: [Note]?
 
   init(name: String) {
